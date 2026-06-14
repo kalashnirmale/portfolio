@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kalash Nirmale | Cloud Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+font-family:Inter,sans-serif;
+background:#050816;
+color:white;
+overflow-x:hidden;
+}
+.bg{
+position:fixed;inset:0;z-index:-1;
+background:
+radial-gradient(circle at 20% 20%,rgba(34,211,238,.18),transparent 30%),
+radial-gradient(circle at 80% 70%,rgba(139,92,246,.18),transparent 30%),
+#050816;
+}
+nav{
+position:fixed;top:0;width:100%;
+backdrop-filter:blur(16px);
+background:rgba(5,8,22,.5);
+border-bottom:1px solid rgba(255,255,255,.08);
+padding:18px 8%;
+display:flex;justify-content:space-between;
+z-index:100;
+}
+nav a{color:#cbd5e1;text-decoration:none;margin-left:24px}
+section{padding:110px 8%}
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+.badge{
+display:inline-block;
+padding:10px 18px;
+border:1px solid rgba(34,211,238,.25);
+background:rgba(34,211,238,.08);
+border-radius:999px;
+color:#67e8f9;
+}
+h1{
+font-size:clamp(4rem,10vw,8rem);
+font-weight:900;
+line-height:.95;
+margin-top:20px;
+}
+.gradient{
+background:linear-gradient(90deg,#22d3ee,#8b5cf6);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+.subtitle{
+max-width:850px;
+margin:30px auto;
+font-size:1.2rem;
+color:#94a3b8;
+}
+.btns{margin-top:30px}
+.btn{
+display:inline-block;
+padding:14px 26px;
+border-radius:14px;
+text-decoration:none;
+margin:8px;
+}
+.primary{background:white;color:black;font-weight:700}
+.secondary{border:1px solid rgba(255,255,255,.15);color:white}
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+margin-top:70px;
+}
+.card{
+background:rgba(255,255,255,.04);
+border:1px solid rgba(255,255,255,.08);
+backdrop-filter:blur(12px);
+border-radius:24px;
+padding:28px;
+transition:.3s;
+}
+.card:hover{transform:translateY(-6px)}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:24px;
+}
+h2{
+font-size:3rem;
+margin-bottom:40px;
+}
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+}
+.skill{
+padding:10px 16px;
+border-radius:999px;
+border:1px solid rgba(34,211,238,.25);
+background:rgba(34,211,238,.08);
+color:#67e8f9;
+}
+.footer{
+text-align:center;
+padding-bottom:80px;
+}
+.links a{
+color:#67e8f9;
+margin:0 15px;
+text-decoration:none;
+}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+
+<nav>
+<div><strong>Kalash.</strong></div>
+<div>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+<div>
+<div class="badge">AWS • Data Engineering • Machine Learning</div>
+
+<h1>
+Building
+<br>
+<span class="gradient">Cloud Products</span>
+</h1>
+
+<p class="subtitle">
+Software Engineer at NICE Actimize building scalable AWS-powered analytics platforms,
+ML infrastructure, QuickSight solutions and enterprise data products.
+</p>
+
+<div class="btns">
+<a class="btn primary" href="#projects">View Projects</a>
+<a class="btn secondary" href="#">Download Resume</a>
+</div>
+
+<div class="stats">
+<div class="card"><h3>2+</h3><p>Years Experience</p></div>
+<div class="card"><h3>10+</h3><p>AWS Services</p></div>
+<div class="card"><h3>CEO</h3><p>Award Winner</p></div>
+<div class="card"><h3>21 KM</h3><p>Half Marathon</p></div>
+</div>
+</div>
+</section>
+
+<section id="about">
+<h2>About</h2>
+<div class="grid">
+<div class="card">
+<h3>Software Engineer</h3><br>
+<p>
+Building AML solutions using AWS Lambda, Glue, Athena, DynamoDB,
+Step Functions, Terraform, Jenkins and QuickSight.
+</p>
+</div>
+<div class="card">
+<h3>Beyond Work</h3><br>
+<p>
+🏃 Half Marathon Runner<br><br>
+🏎 Formula 1 Fan<br><br>
+🍳 Cooking Enthusiast<br><br>
+📚 Continuous Learner
+</p>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Featured Work</h2>
+<div class="grid">
+<div class="card">
+<h3>Dashboard Hosting Framework</h3><br>
+<p>Multi-tenant QuickSight provisioning platform using Lambda, Terraform and DynamoDB.</p>
+</div>
+
+<div class="card">
+<h3>Tableau → QuickSight Migration</h3><br>
+<p>Enterprise analytics modernization initiative recognized with CEO Award.</p>
+</div>
+
+<div class="card">
+<h3>PySpark Data Flattening Engine</h3><br>
+<p>ML data preparation platform built with AWS Glue, Athena and S3.</p>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<h2>Technology Stack</h2>
+<div class="skills">
+<span class="skill">AWS</span>
+<span class="skill">Python</span>
+<span class="skill">PySpark</span>
+<span class="skill">Terraform</span>
+<span class="skill">Jenkins</span>
+<span class="skill">QuickSight</span>
+<span class="skill">Tableau</span>
+<span class="skill">Athena</span>
+<span class="skill">Glue</span>
+<span class="skill">Lambda</span>
+<span class="skill">DynamoDB</span>
+<span class="skill">SQL</span>
+</div>
+</section>
+
+<section>
+<h2>Recognition</h2>
+<div class="grid">
+<div class="card">🏆 CEO Award</div>
+<div class="card">🏆 SPOT Award</div>
+<div class="card">🛡 Security Champion</div>
+</div>
+</section>
+
+<section id="contact" class="footer">
+<h2>Let's Connect</h2>
+<p class="subtitle">
+Open to discussions around Cloud Architecture, Data Engineering,
+Analytics and Machine Learning Infrastructure.
+</p>
+
+<div class="links">
+<a href="mailto:kmnirmale07@gmail.com">Email</a>
+<a href="https://github.com/kalashnirmale">GitHub</a>
+<a href="https://linkedin.com/in/kalashnirmale">LinkedIn</a>
+</div>
+</section>
+
+</body>
+</html>
